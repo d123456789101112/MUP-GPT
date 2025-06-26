@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>МУП ГПТ Волгодонск - Городской пассажирский транспорт</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="logo">
+                    <img src="https://sun9-55.userapi.com/s/v1/if2/n7kxzpEQ2rryWjrQc7bZc3Sfbmf8v3tJOCewExhZJtlgIEe--Bp6_xyVrCDv8psarLCxkkb3pnv_dv81bSaDd0rI.jpg?quality=95&as=32x31,48x46,72x69,108x104,160x153,240x230,360x345,480x460,540x518,640x613,720x690,1080x1035,1280x1227&from=bu&cs=1280x0" alt="">
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-gray-800">МУП ГПТ Волгодонск</h1>
+                    <p class="text-sm text-gray-600">Муниципальное унитарное предприятие</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">О нас</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium">Услуги</a>
+                <a href="#routes" class="text-gray-700 hover:text-blue-600 font-medium">Маршруты</a>
+                <a href="#news" class="text-gray-700 hover:text-blue-600 font-medium">Новости</a>
+                <a href="#contacts" class="text-gray-700 hover:text-blue-600 font-medium">Контакты</a>
+            </nav>
+            <button class="md:hidden text-gray-700" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white w-full py-2 px-4 shadow-md" id="mobile-menu">
+            <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">О нас</a>
+            <a href="#services" class="block py-2 text-gray-700 hover:text-blue-600">Услуги</a>
+            <a href="#routes" class="block py-2 text-gray-700 hover:text-blue-600">Маршруты</a>
+            <a href="#news" class="block py-2 text-gray-700 hover:text-blue-600">Новости</a>
+            <a href="#contacts" class="block py-2 text-gray-700 hover:text-blue-600">Контакты</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Городской пассажирский транспорт Волгодонска</h1>
+                <p class="text-xl mb-6">Обеспечиваем комфортное и безопасное передвижение по городу с 1978 года</p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="#routes" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium text-center hover:bg-gray-100 transition">Посмотреть маршруты</a>
+                    <a href="#contacts" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium text-center hover:bg-white hover:text-blue-600 transition">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">О нашей организации</h2>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">МУП ГПТ Волгодонск</h3>
+                    <p class="text-gray-600 mb-4">Муниципальное унитарное предприятие "Городской пассажирский транспорт" города Волгодонска - ведущий перевозчик городского пассажирского транспорта, обеспечивающий перевозки более 30 миллионов пассажиров ежегодно.</p>
+                    <p class="text-gray-600 mb-4">Наша организация была основана в 1978 году и с тех пор непрерывно развивается, внедряя современные технологии и улучшая качество обслуживания пассажиров.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg">
+                            <i class="fas fa-bus mr-2"></i> 120+ единиц транспорта
+                        </div>
+                        <div class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg">
+                            <i class="fas fa-users mr-2"></i> 300+ сотрудников
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://s0.bloknot-volgodonsk.ru/thumb/1200x0xcut/upload/iblock/527/6.jpg" alt="Транспортный парк" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md card-hover transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-medal text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Наша миссия</h3>
+                    <p class="text-gray-600">Обеспечение доступного, безопасного и комфортного передвижения жителей Волгодонска с использованием современных экологичных транспортных средств.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md card-hover transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-chart-line text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Наши достижения</h3>
+                    <p class="text-gray-600">За последние 5 лет мы обновили 70% автопарка, внедрили электронные билеты и увеличили пассажиропоток на 15% благодаря оптимизации маршрутов.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md card-hover transition">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-leaf text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Экологичность</h3>
+                    <p class="text-gray-600">30% нашего автопарка составляют автобусы, соответствующие экологическому стандарту Евро-5.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Наши услуги</h2>
+            
+            <div class="tabs-container mb-8 border-b border-gray-200">
+                <div class="flex flex-wrap -mb-px">
+                    <button class="tab active mr-8 py-2 px-1" data-tab="regular">Регулярные перевозки</button>
+                    <button class="tab mr-8 py-2 px-1" data-tab="special">Специальные перевозки</button>
+                    <button class="tab py-2 px-1" data-tab="other">Другие услуги</button>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="regular">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-route text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Городские маршруты</h3>
+                        <p class="text-gray-600 mb-4">Организация регулярных перевозок по 25 городским маршрутам с интервалом движения от 7 до 30 минут.</p>
+                        <a href="#routes" class="text-blue-600 font-medium hover:underline">Посмотреть маршруты →</a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-clock text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Удобный график</h3>
+                        <p class="text-gray-600 mb-4">Работаем с 6:00 до 22:00 ежедневно, включая выходные и праздничные дни.</p>
+                        <a href="#routes" class="text-blue-600 font-medium hover:underline">Узнать расписание →</a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-ticket-alt text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Электронные билеты</h3>
+                        <p class="text-gray-600 mb-4">Возможность оплаты проезда банковской картой, транспортной картой и через мобильное приложение.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="special">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-school text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Школьные перевозки</h3>
+                        <p class="text-gray-600 mb-4">Организация специальных маршрутов для перевозки школьников с сопровождением.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-users text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Корпоративные перевозки</h3>
+                        <p class="text-gray-600 mb-4">Организация транспорта для предприятий по специальному графику.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-umbrella-beach text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Туристические маршруты</h3>
+                        <p class="text-gray-600 mb-4">Организация экскурсионных поездок по городу и области.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="other">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-wrench text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Техническое обслуживание</h3>
+                        <p class="text-gray-600 mb-4">Предоставление услуг по ремонту и обслуживанию автобусов других организаций.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-parking text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Аренда парковочных мест</h3>
+                        <p class="text-gray-600 mb-4">Предоставление в аренду мест на охраняемых стоянках предприятия.</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md card-hover transition">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-graduation-cap text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Обучение персонала</h3>
+                        <p class="text-gray-600 mb-4">Курсы подготовки водителей и кондукторов с выдачей сертификатов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Routes Section -->
+    <section id="routes" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Маршрутная сеть</h2>
+            
+            <div class="mb-8">
+                <div class="map-container bg-gray-200 mb-4">
+                    <!-- Здесь карта с маршрутами -->
+                    <div id="app"><div data-v-16110cd4=""><div data-v-16110cd4="" class="map_container"><button data-v-16110cd4="" tabindex="0" class="map_container__fullscreen"><i data-v-16110cd4="" class="RIcon rir-fullscreen_16"></i></button><iframe data-v-16110cd4="" src="https://nimbus.wialon.host/locator/02dea500c15047a5ae87678909a490e9" width="100%" height="768" align="left" class="iframe"></iframe></div><div data-v-16110cd4="" style="margin-top: 42px;"><div data-v-12e114ed="" data-v-16110cd4=""><div data-v-12e114ed="" class="tags-wrapper" style="display: block;"><button data-v-12e114ed="" type="button" class="rir-button scroll-btn-prev primary icon transparent contentWidth" style="display: none;"><i class="rir-icon"><svg width="16px" height="16px" viewBox="0 0 6 16" fill="var(--rir-rocky)" xmlns="http://www.w3.org/2000/svg" class="svg-class"> <path d="M5.83776 2.04148C6.13682 1.57717 6.00285 0.958342 5.53854 0.659288C5.37077 0.55123 5.18282 0.499708 4.99708 0.499878C4.66876 0.500174 4.34732 0.661969 4.15633 0.958515L0.667321 6.37556C0.665633 6.37818 0.663949 6.3808 0.66227 6.38342L0.318578 6.91704C-0.106193 7.57654 -0.106193 8.42348 0.31858 9.08298L0.662295 9.61663C0.663967 9.61925 0.665643 9.62186 0.667324 9.62447L4.15633 15.0415C4.26847 15.2156 4.4256 15.3433 4.60267 15.4191C4.85237 15.5259 5.14174 15.5297 5.40067 15.4151C5.44778 15.3942 5.49387 15.3695 5.53854 15.3407C6.00285 15.0417 6.13682 14.4228 5.83776 13.9585L2.34874 8.5415C2.34777 8.53998 2.34679 8.53846 2.34583 8.53694C2.13733 8.20937 2.13733 7.79064 2.34583 7.46307L5.83776 2.04148Z" fill="var(--rir-rocky)"></path> </svg> </i></button><ul data-v-12e114ed="" class="tags-scroll"></ul><!----></div></div><div data-v-16110cd4="" style="margin-top: 32px;"></div></div></div></div>
+                </div>
+                <p class="text-center text-gray-600">Интерактивная карта маршрутов городского транспорта Волгодонска</p>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Новости и события</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md news-card">
+                    <img src="https://ro.today/uploads/posts/2020-03/1585470820_5d45f8bea8a40675355132.jpg" alt="Новый автобус" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-sm mb-2">
+                            <i class="far fa-calendar-alt mr-1"></i> 15.06.2023
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Обновление автопарка</h3>
+                        <p class="text-gray-600 mb-4">В наш автопарк поступило 10 новых автобусов ЛиАЗ-5292, соответствующих экологическому стандарту Евро-5.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md news-card">
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6566982e62828f62b04a32f5_656698f084ef1976904c8021/scale_1200" alt="Электронные билеты" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-sm mb-2">
+                            <i class="far fa-calendar-alt mr-1"></i> 02.06.2023
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Новая система оплаты</h3>
+                        <p class="text-gray-600 mb-4">С 1 июля 2023 года во всех автобусах будет доступна оплата проезда через мобильное приложение "Транспорт Волгодонска".</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-md news-card">
+                    <img src="https://donday-volgodonsk.ru/uploads/posts/2021-07/1626874552_umnyj-gorod-volgodonsk7.jpg" alt="Изменение маршрута" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-sm mb-2">
+                            <i class="far fa-calendar-alt mr-1"></i> 25.05.2023
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Изменения в маршрутной сети</h3>
+                        <p class="text-gray-600 mb-4">С 10 июня изменяется схема движения маршрутов №3 и №7 в связи с ремонтом дорожного покрытия на ул. Ленина.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Контакты</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md mb-6">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Контактная информация</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mt-1 mr-3">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Адрес:</p>
+                                    <p class="text-gray-600">Ростовская область, г. Волгодонск, Жуковское шоссе, 4</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mt-1 mr-3">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Телефоны:</p>
+                                    <p class="text-gray-600">+7 (8639) 2-34-56 (приемная)</p>
+                                    <p class="text-gray-600">+7 (8639) 2-34-57 (диспетчерская)</p>
+                                    <p class="text-gray-600">+7 (8639) 2-34-58 (отдел кадров)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mt-1 mr-3">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Email:</p>
+                                    <p class="text-gray-600">info@gpt-volgodonsk.ru</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mt-1 mr-3">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-gray-800">Режим работы:</p>
+                                    <p class="text-gray-600">Пн-Пт: 8:00 - 17:00</p>
+                                    <p class="text-gray-600">Сб: 9:00 - 15:00</p>
+                                    <p class="text-gray-600">Вс: выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Обратная связь</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Ваше имя</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 mb-2">Сообщение</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition w-full">
+                                Отправить сообщение
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="map-container bg-gray-200">
+                        <!-- Здесь будет карта с местоположением -->
+                        <div class="h-full flex items-center justify-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.5833745634673!2d42.1996039770347!3d47.49802907118009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411d4ab9f1971d4b%3A0xa5ba9412c4ea646b!2z0JbRg9C60L7QstGB0LrQvtC1INGILiwgNCwg0JLQvtC70LPQvtC00L7QvdGB0LosINCg0L7RgdGC0L7QstGB0LrQsNGPINC-0LHQuy4sIDM0NzM2MA!5e0!3m2!1sru!2sru!4v1750959106714!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-blue-600 text-white p-2 rounded-lg">
+                            <i class="fas fa-bus text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold">МУП ГПТ Волгодонск</h2>
+                            <p class="text-sm text-gray-400">Городской пассажирский транспорт</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-vk text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-telegram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-odnoklassniki text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© 2025 МУП "ГПТ Волгодонск". Все права защищены.</p>
+                    <p class="text-sm text-gray-500 mt-1">Сайт разработан отделом ИТ предприятия</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 text-sm text-gray-400">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <a href="#" class="hover:text-white transition mr-4">Политика конфиденциальности</a>
+                        <a href="#" class="hover:text-white transition">Пользовательское соглашение</a>
+                    </div>
+                    <div>
+                        <a href="#" class="hover:text-white transition">Версия для слабовидящих</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Hide all tab contents
+                tabContents.forEach(content => content.classList.add('hidden'));
+                // Show the corresponding tab content
+                const tabId = tab.getAttribute('data-tab');
+                document.getElementById(tabId).classList.remove('hidden');
+            });
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
